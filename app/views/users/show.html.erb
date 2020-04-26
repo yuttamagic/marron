@@ -1,0 +1,35 @@
+<% if flash[:notice] %>
+  <div class="flash">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
+
+<div class="main user-show">
+  <div class="container">
+    <div class="user-show-profile">
+      <h2><%= @user.name %></h2>
+      <% if @user.marronlike != nil %>
+        <h3>マロンの好きなところ:</h3>
+        <h3><%= @user.marronlike %></h3>
+      <% end %>
+      <%#<h3>メールアドレス:<%= @user.email %><%#</h3>%>
+      <% if @user.id == @current_user.id %>
+        <%= link_to("編集","/users/#{@user.id}/edit") %>
+      <% end %>　
+    </div>
+    <div class="user-show-posts" >
+        <h4>●<%= @user.name %>の投稿●</h4>
+      <% @user.posts.each do |post| %>
+        <div class="posts-index-item">
+        <%#<div class="post-user-name">
+    		  <%= link_to(post.user.name, "/users/#{post.user.id}") %>
+  		  <%#</div> %>
+          <%= link_to(post.content, "/posts/#{post.id}") %>
+        </div>
+      <% end %>
+    </div>
+    <div class="user-left-circle"></div>
+    <div class="user-right-circle-l"></div>
+    <div class="user-right-circle-s"></div>
+  </div>
+</div>

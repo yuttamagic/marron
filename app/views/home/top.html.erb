@@ -1,0 +1,65 @@
+<% if flash[:notice] %>
+  <div class="flash">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
+
+<div class="container">
+  <div class="circle">
+    <div class="small"></div>
+    <div class="medium"></div>
+    <div class="large"></div>
+  </div>
+  <div class="top-message">
+    <h1>Marron's</h1>
+    <h2>room</h2>
+    <div class="welcome-pc">
+      <h3>Welcome to Marron's room</h3>
+    </div>
+    <div class="welcome">
+      <h3 >Welcome</h3>
+      <h3> to </h3>
+      <h3>Marron's room</h3>
+    </div>
+    <div class="header-menus-sp">
+    <ul class="header-menus-sp">
+      <% if @current_user %>
+        <li class="current_user-sp">
+           ようこそ <%= link_to(@current_user.name, "/users/#{@current_user.id}") %>さん
+        </li>
+        <li>
+          <%= link_to("profile", "/profile") %>
+        </li>
+        <li>
+          <%= link_to("question", "/question/new") %>
+        </li>
+        <li>
+          <%= link_to("allposts", "/posts/index") %>
+        </li>
+        <li>
+          <%= link_to("post", "/posts/new") %>
+        </li>
+        <li>
+          <%= link_to("photo","/photo/content") %>
+        </li>
+        <li>
+          <%= link_to("　logout","/logout",{method: :post})%>　
+        </li>
+      <% else %>
+        <li>
+          <%= link_to("profile", "/profile") %>
+        </li>
+        <li>
+          <%= link_to("question", "/question/new") %>
+        </li>
+        <%#<li>
+          <%= link_to("singup","/signup") %>
+        <%#</li>%>
+        <li>
+          <%= link_to("login","/login") %>
+        </li>
+      <% end %>
+    </ul>
+    </div>
+  </div>
+</div>

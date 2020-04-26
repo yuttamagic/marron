@@ -1,0 +1,259 @@
+// Place all the styles related to the question controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+//questuonフラッシュメッセージ ================================//
+
+.answer-flash {
+  color: black;
+  text-align: center;
+  margin: 150px 0px 100px 0px;
+  width: 100%;
+  font-size: 40px;
+  border: 4px solid #CCFFCC;
+}
+
+//question/new/answer==================================//
+.anser-link a {
+  display: none;
+}
+
+@mixin square ($color){
+  display: inline-block;
+  margin-left: 10px;
+  text-align: center;
+  background-color: $color;
+}
+
+.square {
+  margin: 10px;
+  color: #ffffff;
+  letter-spacing: 15px;
+
+
+  .small {
+    @include square (#B2FF65);
+    width: 40px;
+    height: 40px;
+  }
+
+  .medium {
+    @include square (#CCFF99);
+    width: 70px;
+    height: 70px;
+  }
+
+  .large {
+    @include square (#E5FFCC);
+    width: 100px;
+    height: 100px;
+  }
+}
+
+//question/new ==========================================//
+
+.question-form {
+  padding: 20px 40px;
+  text-align: center;
+  letter-spacing: 10px;
+}
+
+.question-new h3 {
+  font-size: 30px;
+  color: black;
+  margin:15px;
+}
+
+.question-new h4 {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.question-new input {
+  width:400px;
+  padding:15px;
+  font-size:15px;
+  border:1px solid #dee7ec;
+  border-radius: 4px;
+}
+
+input.question-submit {
+  background-color:#ECFCF4;
+  color:black;
+  width:130px;
+  padding:10px;
+  cursor:pointer;
+  border-radius: 4px;
+}
+
+.question-tb {
+  display: none;
+}
+
+// タブレット向けレイアウト ***----*****-------**********-------******---//
+@media all and (max-width: 768px) {
+  //@mixin square ($color){
+    //display: inline-block;
+    //margin-left: 10px;
+    //text-align: center;
+    //background-color: $color;
+  //}
+
+  .square {
+    //margin: 10px;
+    //color: #ffffff;
+    letter-spacing: 40px;
+
+
+    .small {
+      //@include square (#B2FF65);
+      width: 60px;
+      height: 60px;
+    }
+
+    .medium {
+      //@include square (#CCFF99);
+      width: 90px;
+      height: 90px;
+    }
+
+    .large {
+      //@include square (#E5FFCC);
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  //question/new ==========================================//
+
+  //.question-form {
+    //padding: 20px 40px;
+    //text-align: center;
+    //letter-spacing: 10px;
+  //}
+
+  //.question-new h3 {
+    //font-size: 30px;
+    //color: black;
+    //margin:15px;
+  //}
+
+  .question-new h4 {
+    //font-size: 20px;
+    margin: 20px;
+  }
+
+  .question-new input {
+    width:500px;
+    padding:20px;
+    font-size:20px;
+    //border:1px solid #dee7ec;
+    //border-radius: 4px;
+  }
+
+  input.question-submit {
+    //background-color:#ECFCF4;
+    //color:black;
+    width:150px;
+    padding:10px;
+    //cursor:pointer;
+    //border-radius: 4px;
+    margin-top: 30px;
+  }
+
+  .question-tb {
+    display: block;
+  }
+}
+
+// スマホ向けレイアウト ***----*****-------**********-------******---//
+@media all and (max-width: 480px) {
+
+  .answer-flash {
+    //color: black;
+    //text-align: center;
+    margin: 150px 0px 80px 0px;
+    //width: 100%;
+    font-size: 23px;
+    //border: 4px solid #CCFFCC;
+  }
+
+  .anser-link a {
+    display: block;
+    color: #009898;
+    margin-bottom: 30px;
+  }
+
+  //@mixin square ($color){
+    //display: inline-block;
+    //margin-left: 10px;
+    //text-align: center;
+    //background-color: $color;
+  //}
+
+  .square {
+    //margin: 10px;
+    //color: #ffffff;
+    letter-spacing: 10px;
+
+
+    .small {
+      //@include square (#B2FF65);
+      width: 60px;
+      height: 60px;
+    }
+
+    .medium {
+      //@include square (#CCFF99);
+      width: 90px;
+      height: 90px;
+    }
+
+    .large {
+      //@include square (#E5FFCC);
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  //question/new ==========================================//
+
+  .question-form {
+    padding: 20px 20px;
+    //text-align: center;
+    letter-spacing: 5px;
+  }
+
+  .question-new h3 {
+    font-size: 20px;
+    //color: black;
+    margin:0px;
+  }
+
+  .question-new h4 {
+    font-size: 15px;
+    margin: 25px;
+  }
+
+  .question-new input {
+    width:350px;
+    padding:15px;
+    font-size:15px;
+    //border:1px solid #dee7ec;
+    //border-radius: 4px;
+  }
+
+  input.question-submit {
+    //background-color:#ECFCF4;
+    //color:black;
+    width:90px;
+    //padding:10px;
+    //cursor:pointer;
+    //border-radius: 4px;
+    margin-top: 30px;
+  }
+
+  .question-tb {
+    display: block;
+  }
+}

@@ -1,0 +1,25 @@
+// Place all the styles related to the photo controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.photo-content h1{
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+}
+
+.photo-item1 {
+  display: inline-block;
+  background-image: url("/images/EULG0751.jpg");
+  width: 350px;
+  height: 350px;
+  margin: 20px;
+}
+
+.photo-item2 {
+  display: inline-block;
+  background-image: url("/images/IMG_0112.JPG");
+  width: 350px;
+  height: 350px;
+  margin: 20px;
+}

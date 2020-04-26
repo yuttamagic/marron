@@ -1,0 +1,20 @@
+<div class="main question-new">
+  <div class="container">
+    <div class="square">
+      <div class="small"></div>
+      <div class="medium"></div>
+      <div class="large"></div>
+    </div>
+    <div class="question-form">
+      <h3>マロンに質問してみよう🐾</h3>
+      <h4>下の欄に質問を書いてマロンに聞いてみよう!</h4>
+    </div>
+    <%= form_tag("/question/create") do %>
+      <div class="question-form-body">
+        <input name="content">
+        <br class="question-tb">
+        <input class="question-submit" type="submit" value="送信">
+      </div>
+    <% end %>
+  </div>
+</div>

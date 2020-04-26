@@ -1,0 +1,18 @@
+<% if flash[:notice] %>
+  <div class="answer-flash">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
+
+<div class="main question-answer">
+  <div class="container">
+    <div class="anser-link">
+      <%= link_to("もういちどしつもんする", "/question/new") %>
+    </div>
+    <div class="square">
+      <div class="small"></div>
+      <div class="medium"></div>
+      <div class="large"></div>
+    </div>
+  </div>
+</div>
