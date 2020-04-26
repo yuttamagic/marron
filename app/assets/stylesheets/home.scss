@@ -250,6 +250,9 @@ h1 {
   font-size: 16px;
   letter-spacing: 2px;
   border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .form textarea {
@@ -262,6 +265,9 @@ h1 {
   resize: none;
   font-family: 'Avenir Next';
   border-color: #D6F4D6;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .form input[type="submit"] {
@@ -272,6 +278,9 @@ h1 {
   cursor:pointer;
   border-radius: 4px;
   margin-top: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 //フッター  ----------------------------------------------//

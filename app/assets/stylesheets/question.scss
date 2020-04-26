@@ -84,6 +84,9 @@ input.question-submit {
   padding:10px;
   cursor:pointer;
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .question-tb {
