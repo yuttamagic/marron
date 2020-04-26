@@ -55,6 +55,9 @@ class QuestionController < ApplicationController
       elsif @questions.content.include?("おやすみ")
         redirect_to("/question/answer")
         flash[:notice]="おやすみなさい🐾"
+      elsif @questions.content.include?("会い")||@questions.content.include?("あい")
+        redirect_to("/question/answer")
+        flash[:notice]="いつでもあえるじゃん🐾"
       elsif @questions.content.include?("ログイン")&&@questions.content.include?("した")||@questions.content.include?("ログイン")&&@questions.content.include?("しま")
         redirect_to("/question/answer")
         flash[:notice]="さぁ、なにしよう??🐾"
@@ -115,6 +118,12 @@ class QuestionController < ApplicationController
       elsif @questions.content.length > 20
         redirect_to("/question/answer")
         flash[:notice]="きみってほんとうにおもしろいね🐾"
+      elsif @questions.content.length > 21
+        redirect_to("/question/answer")
+        flash[:notice]="おひるねさいこー🐾"
+      elsif @questions.content.length > 22
+        redirect_to("/question/answer")
+        flash[:notice]="きょうなにしてた?🐾"
       else
         redirect_to("/question/answer")
         flash[:notice]="ログインありがとう🐾"
@@ -168,6 +177,9 @@ class QuestionController < ApplicationController
       elsif @questions.content.include?("おやすみ")
         redirect_to("/question/answer")
         flash[:notice]="おやすみなさい🐾"
+      elsif @questions.content.include?("会い")||@questions.content.include?("あい")
+        redirect_to("/question/answer")
+        flash[:notice]="いつでもあえるじゃん🐾"
       elsif @questions.content.include?("ログイン")&&@questions.content.include?("した")||@questions.content.include?("ログイン")&&@questions.content.include?("しま")
         redirect_to("/question/answer")
         flash[:notice]="すてきなことがおこりそう🐾"
@@ -228,6 +240,12 @@ class QuestionController < ApplicationController
       elsif @questions.content.length > 20
         redirect_to("/question/answer")
         flash[:notice]="きみってほんとうにおもしろいね🐾"
+      elsif @questions.content.length > 21
+        redirect_to("/question/answer")
+        flash[:notice]="おひるねさいこー🐾"
+      elsif @questions.content.length > 22
+        redirect_to("/question/answer")
+        flash[:notice]="きょうなにしてた?🐾"
       else
         redirect_to("/question/answer")
         flash[:notice]="まずはログインしてみない??🐾"
