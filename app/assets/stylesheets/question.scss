@@ -75,6 +75,9 @@
   font-size:15px;
   border:1px solid #dee7ec;
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 input.question-submit {
@@ -249,7 +252,7 @@ input.question-submit {
   input.question-submit {
     //background-color:#ECFCF4;
     //color:black;
-    width:90px;
+    width:120px;
     //padding:10px;
     //cursor:pointer;
     //border-radius: 4px;
