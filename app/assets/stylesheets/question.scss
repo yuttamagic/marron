@@ -7,10 +7,16 @@
 .answer-flash {
   color: black;
   text-align: center;
-  margin: 150px 0px 100px 0px;
+  margin: 150px 0px 50px 0px;
   width: 100%;
   font-size: 40px;
   border: 4px solid #CCFFCC;
+}
+
+.answer-flash p{
+  margin: 0px;
+  color: #8DB516;
+
 }
 
 //question/new/answer==================================//
@@ -70,7 +76,7 @@
 }
 
 .question-new input {
-  width:400px;
+  width:320px;
   padding:15px;
   font-size:15px;
   border:1px solid #dee7ec;
