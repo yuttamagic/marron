@@ -1,4 +1,4 @@
-<%= javascript_pack_tag "marron.js" %>
+<%#<%= javascript_pack_tag "marron.js" %>
 <div class="main question-new">
   <div class="container">
     <div class="square">
@@ -12,7 +12,7 @@
     </div>
     <%= form_tag("/question/create") do %>
       <div class="question-form-body">
-        <input name="content" class="" value="" placeholder="れい:すきなごはんはなに?">
+        <input name="content">
         <br class="question-tb">
         <input class="question-submit" type="submit" value="きいてみる">
       </div>
