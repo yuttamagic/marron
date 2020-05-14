@@ -16,9 +16,12 @@ class QuestionController < ApplicationController
       elsif @questions.content.include?("国見")||@questions.content.include?("くにみ")
         redirect_to("/question/answer")
         flash[:notice]="くにみはなおちゃんとであったところだよ🐾"
-      elsif @questions.content.include?("虫")||@questions.content.include?("むし")||@questions.content.include?("こんちゅう")
+      elsif @questions.content.include?("好き") && @questions.content.include?("虫")||@questions.content.include?("すき") && @questions.content.include?("むし")||@questions.content.include?("すき") && @questions.content.include?("こんちゅう")
         redirect_to("/question/answer")
         flash[:notice]="かまきりーー!!🐾"
+      elsif @questions.content.include?("虫")||@questions.content.include?("むし")||@questions.content.include?("こんちゅう")
+        redirect_to("/question/answer")
+        flash[:notice]="きみは??🐾"
       elsif @questions.content.include?("風呂")||@questions.content.include?("ふろ")||@questions.content.include?("フロ")
         redirect_to("/question/answer")
         flash[:notice]="よしみちゃんとおふろにはいるのがすきなんだ🐾"
@@ -70,12 +73,12 @@ class QuestionController < ApplicationController
       elsif @questions.content.include?("知ら")||@questions.content.include?("しら")
         redirect_to("/question/answer")
         flash[:notice]="あらら、そっかぁ🐾"
-      elsif @questions.content.include?("わから")
+      elsif @questions.content.include?("わから")||@questions.content.include?("わかん")
         redirect_to("/question/answer")
         flash[:notice]="えーー!!かんがえてみて!🐾"
       elsif @questions.content.length < 3
         redirect_to("/question/answer")
-        flash[:notice]="もっときみにぼくのことしってほしいな🐾"
+        flash[:notice]="...?もうすこしくわしくおねがい🐾"
       elsif @questions.content.length < 4
         redirect_to("/question/answer")
         flash[:notice]="なんかそれおもしろいね🐾"
@@ -93,16 +96,16 @@ class QuestionController < ApplicationController
         flash[:notice]="ってかさ、さいきんどう??🐾"
       elsif @questions.content.length < 9
         redirect_to("/question/answer")
-        flash[:notice]="にゃんにゃんにゃぁーん🐾"
+        flash[:notice]="え、びっくりなんだけど🐾"
       elsif @questions.content.length < 10
         redirect_to("/question/answer")
-        flash[:notice]="なんかさいきんあたたかくなってきたね🐾"
+        flash[:notice]="きみもかつおぶしすき?🐾"
       elsif @questions.content.length < 11
         redirect_to("/question/answer")
-        flash[:notice]="ひなたぼっこってさ、さいこう!🐾"
+        flash[:notice]="ひなたぼっこすき?🐾"
       elsif @questions.content.length < 12
         redirect_to("/question/answer")
-        flash[:notice]="すぐねむくなっちゃうんだよね🐾"
+        flash[:notice]="かつおぶしのばしょおしえて🐾"
       elsif @questions.content.length < 13
         redirect_to("/question/answer")
         flash[:notice]="あしたのてんきしってる?🐾"
@@ -111,13 +114,13 @@ class QuestionController < ApplicationController
         flash[:notice]="もうおふろはいった?🐾"
       elsif @questions.content.length < 15
         redirect_to("/question/answer")
-        flash[:notice]="まぁまぁおちついて🐾"
+        flash[:notice]="きのうなにたべた?🐾"
       elsif @questions.content.length < 16
         redirect_to("/question/answer")
         flash[:notice]="ぼくのしゃしんみた?🐾"
       elsif @questions.content.length < 17
         redirect_to("/question/answer")
-        flash[:notice]="ひゅー!かっこいい!!🐾"
+        flash[:notice]="おもしろいことあった?🐾"
       elsif @questions.content.length < 18
         redirect_to("/question/answer")
         flash[:notice]="ぼくのことしりたい?🐾"
@@ -129,13 +132,13 @@ class QuestionController < ApplicationController
         flash[:notice]="きみってほんとうにおもしろいね🐾"
       elsif @questions.content.length < 21
         redirect_to("/question/answer")
-        flash[:notice]="おひるねさいこー🐾"
+        flash[:notice]="はっぱたべたことある?🐾"
       elsif @questions.content.length < 22
         redirect_to("/question/answer")
         flash[:notice]="きょうなにしてた?🐾"
       elsif @questions.content.length < 23
         redirect_to("/question/answer")
-        flash[:notice]="ほんとに?そういうこと?🐾"
+        flash[:notice]="ほんとに?そうなの?🐾"
       else
         redirect_to("/question/answer")
         flash[:notice]="もっとかんたんなことばでおねがいっ🐾"
@@ -150,9 +153,12 @@ class QuestionController < ApplicationController
       elsif @questions.content.include?("国見")||@questions.content.include?("くにみ")
         redirect_to("/question/answer")
         flash[:notice]="くにみはなおちゃんとであったところだよ🐾"
-      elsif @questions.content.include?("虫")||@questions.content.include?("むし")||@questions.content.include?("こんちゅう")
+      elsif @questions.content.include?("好き") && @questions.content.include?("虫")||@questions.content.include?("すき") && @questions.content.include?("むし")||@questions.content.include?("すき") && @questions.content.include?("こんちゅう")
         redirect_to("/question/answer")
         flash[:notice]="かまきりーー!!🐾"
+      elsif @questions.content.include?("虫")||@questions.content.include?("むし")||@questions.content.include?("こんちゅう")
+        redirect_to("/question/answer")
+        flash[:notice]="きみは??🐾"
       elsif @questions.content.include?("風呂")||@questions.content.include?("ふろ")||@questions.content.include?("フロ")
         redirect_to("/question/answer")
         flash[:notice]="よしみちゃんとおふろにはいるのがすきなんだ🐾"
@@ -204,12 +210,12 @@ class QuestionController < ApplicationController
       elsif @questions.content.include?("知ら")||@questions.content.include?("しら")
         redirect_to("/question/answer")
         flash[:notice]="そっかぁ🐾"
-      elsif @questions.content.include?("わから")
+      elsif @questions.content.include?("わから")||@questions.content.include?("わかん")
         redirect_to("/question/answer")
         flash[:notice]="えーー!!かんがえてみて!🐾"
       elsif @questions.content.length < 3
         redirect_to("/question/answer")
-        flash[:notice]="もっときみにぼくのことしってほしいな🐾"
+        flash[:notice]="...?もうすこしくわしくおねがい🐾"
       elsif @questions.content.length < 4
         redirect_to("/question/answer")
         flash[:notice]="なんかそれおもしろいね🐾"
@@ -227,13 +233,13 @@ class QuestionController < ApplicationController
         flash[:notice]="ってかさ、ログインのやりかたわかる??🐾"
       elsif @questions.content.length < 9
         redirect_to("/question/answer")
-        flash[:notice]="にゃんにゃんにゃぁーん🐾"
+        flash[:notice]="え、びっくりなんだけど🐾"
       elsif @questions.content.length < 10
         redirect_to("/question/answer")
         flash[:notice]="えっ?!まだログインしてないの?!🐾"
       elsif @questions.content.length < 11
         redirect_to("/question/answer")
-        flash[:notice]="やっぱりおうちでひなたぼっこがいちばんだね🐾"
+        flash[:notice]="ひなたぼっこすき?🐾"
       elsif @questions.content.length < 12
         redirect_to("/question/answer")
         flash[:notice]="あ~ログインしたらどうなるのかなぁ~🐾"
@@ -245,7 +251,7 @@ class QuestionController < ApplicationController
         flash[:notice]="もうおふろはいった?🐾"
       elsif @questions.content.length < 15
         redirect_to("/question/answer")
-        flash[:notice]="まぁまぁおちついて🐾"
+        flash[:notice]="きのうなにたべた?🐾"
       elsif @questions.content.length < 16
         redirect_to("/question/answer")
         flash[:notice]="ログインしてみて~🐾"
@@ -257,19 +263,19 @@ class QuestionController < ApplicationController
         flash[:notice]="ログインしたらぼくのしゃしんあるよ🐾"
       elsif @questions.content.length < 19
         redirect_to("/question/answer")
-        flash[:notice]="ところでログインどうなった?🐾"
+        flash[:notice]="ところでログインのけんは?🐾"
       elsif @questions.content.length < 20
         redirect_to("/question/answer")
         flash[:notice]="きみってほんとうにおもしろいね🐾"
       elsif @questions.content.length < 21
         redirect_to("/question/answer")
-        flash[:notice]="おひるねさいこー🐾"
+        flash[:notice]="はっぱたべたことある?🐾"
       elsif @questions.content.length < 22
         redirect_to("/question/answer")
         flash[:notice]="きょうなにしてた?🐾"
       elsif @questions.content.length < 23
         redirect_to("/question/answer")
-        flash[:notice]="ほんとに?そういうこと?🐾"
+        flash[:notice]="もっとかんたんなことばでおねがいっ🐾"
       else
         redirect_to("/question/answer")
         flash[:notice]="まずはログインしてみない??🐾"

@@ -1,7 +1,3 @@
-//$(function() {
-//$('[placeholder]').ahPlaceholder({
-    //placeholderColor : 'silver',
-    //placeholderAttr : 'placeholder',
-    //likeApple : false
-   //});
-//});
+$(function() {
+  $("h1").slideDown(3000);
+});
