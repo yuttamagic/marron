@@ -87,6 +87,8 @@ header {
   display: none;
 }
 
+
+
 //メイン  ----------------------------------------------//
 
 @mixin circle ($color){
@@ -288,10 +290,11 @@ h1 {
 footer {
   height: 50px;
   width: 100%;
-  position: fixed;
+  //position: fixed; //画面幅の下に固定する時
   bottom: 0;
   background-color: #F5FFFA;
   z-index: 10;
+  position: relative;
 }
 
 .footer-logo {
@@ -654,6 +657,10 @@ footer {
     display: block;
   }
 
+  //.header-right-menu{
+    //display: block;
+  //}
+
 }
 
 
@@ -701,14 +708,14 @@ footer {
     //z-index: 10;
   //}
 
-  .header-logo {
+  //.header-logo {
     //float: left;
-    padding-left: 0px;
+    //padding-left: 0px;
     //line-height: 64px;
     //font-size: 32px;
-    width: 100%;
-    text-align: center;
-  }
+    //width: 100%;
+    //text-align: center;
+  //}
 
   .header-menus {
     //float: right;
@@ -857,8 +864,8 @@ footer {
     //position: absolute;
     //border-radius: 50%;
     //background-color: #E5FFCC;
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
     margin-left: 50px;
     //margin-top: 100px;
     top: 10px;

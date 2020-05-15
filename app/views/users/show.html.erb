@@ -14,11 +14,11 @@
       <% end %>
       <%#<h3>メールアドレス:<%= @user.email %><%#</h3>%>
       <% if @user.id == @current_user.id %>
-        <%= link_to("編集","/users/#{@user.id}/edit") %>
-      <% end %>　
+        <%= link_to("ユーザー情報の編集","/users/#{@user.id}/edit") %>
+      <% end %>
     </div>
     <div class="user-show-posts" >
-        <h4>●<%= @user.name %>の投稿●</h4>
+        <h4>●<%= @user.name %><%= link_to("の投稿●","/posts/new") %></h4>
       <% @user.posts.each do |post| %>
         <div class="posts-index-item">
         <%#<div class="post-user-name">

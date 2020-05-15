@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    
+
   </head>
 
   <body>
@@ -19,15 +19,17 @@
           <%= link_to("Marron", "/") %>
       </div>
 
-      <%#<div class="wrap">
-        <li id="menu_link">
-          <i class="fas fa-bars"></i>
-        </li>
+      <%#<div class="header-right-menu" id="header-right-menu">
+          <div class="fas fa-bars"></div>
+      </div>
 
-      <div class="icon_link_tab">
+      <%#<div class="icon_link_tab">
         <div class="close_btn">
           <i class="fas fa-times"></i>
-        </div> %>
+        </div>
+      </div>%>
+
+
         <ul class="header-menus">
           <% if @current_user %>
             <li>
@@ -66,7 +68,6 @@
             </li>
           <% end %>
         </ul>
-      <%#</div>%>
     </header>
 
 
