@@ -37,6 +37,13 @@ body {
   width: 100%;
 }
 
+.hometop-container {
+  //margin-top: 118px;
+  margin-bottom: 80px;
+  text-align: center;
+  width: 100%;
+}
+
 //posts.index/users.show//フラッシュメッセージ　----------------//
 
 .flash {
@@ -89,7 +96,16 @@ header {
 
 
 
-//メイン  ----------------------------------------------//
+//home/top ----------------------------------------------//
+
+.photos {
+  width: 100%;
+  height: 500px;
+  margin-top: 30px;
+  background-image: url("/images/IMG_9663.JPG");
+  background-size: cover;
+  background-position: center;
+}
 
 @mixin circle ($color){
   display: inline-block;
@@ -303,6 +319,28 @@ footer {
   padding-right: 20px;
   padding-top: 10px;
 }
+
+// ディスプレイ1500px以上レイアウト　profile circleのみ　========////
+
+@media all and (min-width: 1350px) {
+  .profile-biglarge {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #D0FAD0;
+    width: 750px;
+    height: 750px;
+    top: 25px;
+    margin-left: 1400px;
+    opacity: 0.2;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  footer {
+    position: fixed;
+  }
+}
+
 
 
 // タブレット横向きレイアウトprofile circleのみ ==*******====/////
@@ -744,6 +782,15 @@ footer {
   }
 
   //メイン  ----------------------------------------------//
+
+  .photos {
+    //width: 100%;
+    height: 300px;
+    //margin-top: 30px;
+    background-image: url("/images/IMGP3038.JPG");
+    //background-size: cover;
+    //background-position: center;
+  }
 
   //@mixin circle ($color){
   //  display: inline-block;

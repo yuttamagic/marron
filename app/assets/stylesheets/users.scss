@@ -108,6 +108,32 @@
   opacity: 0.3;
 }
 
+// ディスプレイ1500px以上レイアウト　user show circleのみ　========////
+
+@media all and (min-width: 1300px) {
+  .user-circle-l {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #D0FAD0;
+    width: 650px;
+    height: 650px;
+    top: 25px;
+    margin-left: 1600px;
+    opacity: 0.2;
+  }
+
+  .user-circle-s {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #D0FAD0;
+    width: 400px;
+    height: 400px;
+    margin-left: 1300px;
+    top: 140px;
+    opacity: 0.3;
+  }
+}
+
 //タブレット用レイアウト --------------------------------------------//
 @media all and (max-width: 768px) {
 

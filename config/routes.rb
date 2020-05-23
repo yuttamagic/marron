@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+
+  get "photo/janken" => "photo#janken"
+  get "photo/top" => "photo#top"
   get 'photo/content' => "photo#content"
 
   post "logout" => "users#logout"
