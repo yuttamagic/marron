@@ -12,6 +12,10 @@
   margin-top: 20px;
 }
 
+.singup-in p {
+  color: #FF9999;
+}
+
 //user/show ---------------------------------------//
 
 .user-show .container {
@@ -26,7 +30,6 @@
 
 .user-show-profile h3 {
   font-size: 15px;
-  //margin-bottom: 15px;
   font-weight: 500;
   margin-top: 0px;
   position: relative;
@@ -67,7 +70,6 @@
   background-color: white;
   overflow: hidden;
   box-shadow: 0 2px 6px #DBF9D1;
-  //text-align: center;
   position: relative;
   z-index: 9;
 }
@@ -79,7 +81,6 @@
   width: 300px;
   height: 300px;
   margin-left: 30px;
-  //margin-top: 60px;
   top: 40px;
   opacity: 0.3;
 }
@@ -91,7 +92,6 @@
   width: 420px;
   height: 420px;
   margin-left: 140px;
-  //margin-top: 60px;
   top: 190px;
   opacity: 0.3;
 }
@@ -103,7 +103,6 @@
   width: 500px;
   height: 500px;
   margin-left: 650px;
-  //margin-top: 60px;
   top: 0px;
   opacity: 0.3;
 }
@@ -142,39 +141,24 @@
   }
 
   .user-right-circle-s {
-    //position: absolute;
-    //border-radius: 50%;
-    //background-color: #D0FAD0;
     width: 350px;
     height: 350px;
     margin-left: 10px;
-    //margin-top: 60px;
     top: 220px;
-    //opacity: 0.3;
   }
 
   .user-right-circle-l {
-    //position: absolute;
-    //border-radius: 50%;
-    //background-color: #CCFF99;
     width: 570px;
     height: 570px;
     margin-left: 175px;
-    //margin-top: 60px;
     top: 410px;
-    //opacity: 0.3;
   }
 
   .user-left-circle {
-    //position: absolute;
-    //border-radius: 50%;
-    //background-color: #E5FFCC;
     width: 400px;
     height: 400px;
     margin-left: 350px;
-    //margin-top: 60px;
     top: 20px;
-    //opacity: 0.3;
   }
 }
 
@@ -186,47 +170,29 @@
   }
 
   .user-right-circle-s {
-    //position: absolute;
-    //border-radius: 50%;
-    //background-color: #D0FAD0;
     width: 170px;
     height: 170px;
     margin-left: 10px;
-    //margin-top: 60px;
     top: 250px;
-    //opacity: 0.3;
   }
 
   .user-right-circle-l {
-    //position: absolute;
-    //border-radius: 50%;
-    //background-color: #CCFF99;
     width: 350px;
     height: 350px;
     margin-left: 10px;
-    //margin-top: 60px;
     top: 370px;
-    //opacity: 0.3;
   }
 
   .user-left-circle {
-    //position: absolute;
-    //border-radius: 50%;
-    //background-color: #E5FFCC;
     width: 280px;
     height: 280px;
     margin-left: 90px;
-    //margin-top: 60px;
     top: 40px;
-    //opacity: 0.3;
   }
 
   .user-show-posts {
     max-width: 350px;
-    //margin: 0 auto;
-    //background-color: white;
     padding: 0px;
-    //text-align: center;
   }
 
 }

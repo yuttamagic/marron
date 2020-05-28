@@ -108,38 +108,6 @@
 
 // タブレット向けレイアウト ***----*****-------**********-------******---//
 @media all and (max-width: 768px) {
-  // posts/index ================================ */
-  //.posts-index {
-    //max-width: 700px;
-    //margin: 0 auto;
-    //background-color: white;
-    //padding: 20px 60px;
-  //}
-
-  //.posts-index .posts-index-item {
-    //padding: 20px 30px;
-    //background-color: white;
-    //overflow: hidden;
-    //box-shadow: 0 2px 6px #DBF9D1;
-  //}
-
-  // posts/new ================================ */
-
-  //.posts-new h1 {
-    //font-size: 40px;
-  //}
-
-  //.posts-new p {
-    //font-size: 20px;
-    //margin-bottom: 30px;
-  //}
-
-  //.posts-new input {
-    //width:400px;
-    //padding:15px;
-    //font-size:15px;
-    //border:1px solid #dee7ec;
-  //}
 
   // posts/show ================================ */
 
@@ -147,64 +115,16 @@
     margin-top: 50px;
   }
 
-  //.post-menus a {
-    //color:black;
-    //width:130px;
-    //padding:10px;
-    //cursor:pointer;
-    //font-size: 14px;
-    //text-decoration: underline;
-  //}
   .post-user-content p {
-    //font-size: 30px;
     max-width: 600px;
-    //margin: 0 auto;
   }
 
   .post-user-name p {
     font-size: 25px;
-    //font-weight: 550;
   }
 
-  //.post-user-name:hover{
-    //opacity: 0.7;
-  //}
-
-  //@mixin triangle ($color){
-    //display: inline-block;
-    //text-align: center;
-    //margin-left: 20px;
-    //color: $color;
-  //}
-
   .triangle {
-    //padding-bottom: 10px;
     letter-spacing: 30px;
-    //text-align: center;
-
-    //.small {
-      //@include triangle (#B2FF65);
-      //border-top: 50px solid transparent;
-      //border-bottom: 50px solid;
-      //border-right: 30px solid transparent;
-      //border-left: 30px solid transparent;
-    //}
-
-    //.medium {
-      //@include triangle (#CCFF99);
-      //border-top: 100px solid transparent;
-      //border-bottom: 100px solid;
-      //border-right: 60px solid transparent;
-      //border-left: 60px solid transparent;
-    //}
-
-    //.large {
-      //@include triangle (#E5FFCC);
-      //border-top: 120px solid transparent;
-      //border-bottom: 120px solid;
-      //border-right: 80px solid transparent;
-      //border-left: 80px solid transparent;
-    //}
   }
 }
 
@@ -213,17 +133,8 @@
   // posts/index ================================ */
   .posts-index {
     max-width: 350px;
-    //margin: 0 auto;
-    //background-color: white;
     padding: 20px 0px;
   }
-
-  //.posts-index .posts-index-item {
-    //padding: 20px 30px;
-    //background-color: white;
-    //overflow: hidden;
-    //box-shadow: 0 2px 6px #DBF9D1;
-  //}
 
   // posts/new ================================ */
 
@@ -236,56 +147,25 @@
     margin: 30px 10px;
   }
 
-  //.posts-new input {
-    //width:400px;
-    //padding:15px;
-    //font-size:15px;
-    //border:1px solid #dee7ec;
-  //}
-
   // posts/show ================================ */
 
   .posts-show .container {
     margin-top: 50px;
   }
 
-  //.post-menus a {
-    //color:black;
-    //width:130px;
-    //padding:10px;
-    //cursor:pointer;
-    //font-size: 14px;
-    //text-decoration: underline;
-  //}
   .post-user-content p {
-    //font-size: 30px;
     max-width: 350px;
     margin: 0 20px;
   }
 
   .post-user-name p {
     font-size: 25px;
-    //font-weight: 550;
   }
 
-  //.post-user-name:hover{
-    //opacity: 0.7;
-  //}
-
-  //@mixin triangle ($color){
-    //display: inline-block;
-    //text-align: center;
-    //margin-left: 20px;
-    //color: $color;
-  //}
-
   .triangle {
-    //padding-bottom: 10px;
     letter-spacing: 10px;
-    //text-align: center;
 
     .small {
-      //@include triangle (#B2FF65);
       border-top: 40px solid transparent;
       border-bottom: 40px solid;
       border-right: 20px solid transparent;
@@ -293,7 +173,6 @@
     }
 
     .medium {
-      //@include triangle (#CCFF99);
       border-top: 70px solid transparent;
       border-bottom: 70px solid;
       border-right: 30px solid transparent;
@@ -301,7 +180,6 @@
     }
 
     .large {
-      //@include triangle (#E5FFCC);
       border-top: 90px solid transparent;
       border-bottom: 90px solid;
       border-right: 40px solid transparent;
