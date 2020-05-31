@@ -16,6 +16,12 @@ class QuestionController < ApplicationController
       elsif @questions.content.include?("国見")||@questions.content.include?("くにみ")
         redirect_to("/question/answer")
         flash[:notice]="くにみはなおちゃんとであったところだよ🐾"
+      elsif @questions.content.include?("夢")||@questions.content.include?("ゆめ")
+        redirect_to("/question/answer")
+        flash[:notice]="きみのゆめってなに?🐾"
+      elsif @questions.content.include?("寝")||@questions.content.include?("眠い")||@questions.content.include?("ねる")||@questions.content.include?("ねむい")
+        redirect_to("/question/answer")
+        flash[:notice]="どんなゆめがすき?🐾"
       elsif @questions.content.include?("好き") && @questions.content.include?("虫")||@questions.content.include?("すき") && @questions.content.include?("むし")||@questions.content.include?("すき") && @questions.content.include?("こんちゅう")
         redirect_to("/question/answer")
         flash[:notice]="かまきりーー!!🐾"
@@ -153,6 +159,12 @@ class QuestionController < ApplicationController
       elsif @questions.content.include?("国見")||@questions.content.include?("くにみ")
         redirect_to("/question/answer")
         flash[:notice]="くにみはなおちゃんとであったところだよ🐾"
+      elsif @questions.content.include?("夢")||@questions.content.include?("ゆめ")
+        redirect_to("/question/answer")
+        flash[:notice]="きみのゆめってなに?🐾"
+      elsif @questions.content.include?("寝")||@questions.content.include?("眠い")||@questions.content.include?("ねる")||@questions.content.include?("ねむい")
+        redirect_to("/question/answer")
+        flash[:notice]="どんなゆめがすき?🐾"
       elsif @questions.content.include?("好き") && @questions.content.include?("虫")||@questions.content.include?("すき") && @questions.content.include?("むし")||@questions.content.include?("すき") && @questions.content.include?("こんちゅう")
         redirect_to("/question/answer")
         flash[:notice]="かまきりーー!!🐾"

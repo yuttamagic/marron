@@ -5,7 +5,9 @@
 <% end %>
 
 <div class="photos">
-  <div class="photo1"></div>
+  <div class="photo1">
+      <h2>Hello <span>W</span>orld</h2>
+  </div>
 </div>
 <div class="hometop-container">
   <div class="circle">
@@ -28,7 +30,7 @@
     <ul class="header-menus-sp">
       <% if @current_user %>
         <li class="current_user-sp">
-           ようこそ <%= link_to(@current_user.name, "/users/#{@current_user.id}") %>さん
+           Hello! <%= link_to(@current_user.name, "/users/#{@current_user.id}") %>!
         </li>
         <li>
           <%= link_to("profile", "/profile") %>
