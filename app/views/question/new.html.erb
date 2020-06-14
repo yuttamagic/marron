@@ -1,21 +1,25 @@
 <%#<%= javascript_pack_tag "marron.js" %>
 <div class="main question-new">
   <div class="container">
+    <div class="photos question-photo">
+      <h2>Question</h2>
+    </div>
+    <div class="question-form">
+      <h3>マロンJr.(エムジェイ)</h3>
+      <h3>に質問してみよう🐾</h3>
+      <h4>下の欄に質問を書いて聞いてみよう!</h4>
+    </div>
+    <%= form_tag("/question/create") do %>
+      <div class="question-form-body">
+        <input name="content" placeholder="なんさいですか">
+        <br class="question-tb">
+        <input class="question-submit" type="submit" value="きいてみる">
+      </div>
+    <% end %>
     <div class="square">
       <div class="small"></div>
       <div class="medium"></div>
       <div class="large"></div>
     </div>
-    <div class="question-form">
-      <h3>マロンに質問してみよう🐾</h3>
-      <h4>下の欄に質問を書いてマロンに聞いてみよう!</h4>
-    </div>
-    <%= form_tag("/question/create") do %>
-      <div class="question-form-body">
-        <input name="content" placeholder="げんきにしてる?">
-        <br class="question-tb">
-        <input class="question-submit" type="submit" value="きいてみる">
-      </div>
-    <% end %>
   </div>
 </div>

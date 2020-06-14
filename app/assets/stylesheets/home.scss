@@ -30,13 +30,7 @@ body {
 }
 
 .container {
-  margin-top: 118px;
-  margin-bottom: 80px;
-  text-align: center;
-  width: 100%;
-}
-
-.hometop-container {
+  margin-top: 70px;
   margin-bottom: 80px;
   text-align: center;
   width: 100%;
@@ -65,7 +59,7 @@ header {
   position: fixed;
   width: 100%;
   background-color: #F5FFFA;
-  z-index: 10;
+  z-index: 100;
 }
 
 .header-logo {
@@ -92,31 +86,101 @@ header {
   display: none;
 }
 
+.header-right-icon{
+  //color: #204539;
+  //font-size: 30px;
+  //line-height: 64px;
+  //padding: 0px 15px;
+  //margin: 0px 15px;
+  //display:none;
+}
 
+.header-left-icon {
+   padding: 0px 32px;
+   display:none;
+ }
+
+.modal-menu {
+  width: 100%;
+  background-color: #F5FFFA;
+  margin-top: 20px;
+  padding-top: 25px;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  border-bottom: 3px solid white;
+  display:none;
+}
+
+.header-modal-menu li {
+  font-size: 14px;
+  padding: 15px 0px;
+  font-weight: 530;
+  text-align: right;
+  letter-spacing: 5px;
+  border-top: 2px solid white;
+}
+
+//ハンバーガーメニューCSS実装バージョン====///////
+
+.header-right-icon {
+  width: 27px;
+  height: 64px;
+  cursor: pointer;
+  margin: 0px 18px;
+  display:none;
+}
+
+.header-right-icon .line {
+  position: absolute;
+  width: 27px;
+  height: 2px;
+  background: black;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+ }
+
+.header-right-icon .line_01 { top: 25px; }
+.header-right-icon .line_02 { top: 35px; }
+.header-right-icon .line_03 { top: 45px; }
+
+.header-right-icon.is-active .line_01 {
+  top: 35px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.header-right-icon.is-active .line_02 {
+  opacity: 0;
+}
+
+.header-right-icon.is-active .line_03 {
+  top: 35px;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
 
 //home/top ----------------------------------------------//
 
 .photos {
-  margin-top: 100px;
-}
-
-.photo1 {
   position: relative;
   width: 100%;
-  height:450px;
+  height:300px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.top-photo {
+  margin-top: 50px;
   background-repeat:  no-repeat;
   background-image: url("/images/IMG_9663.JPG");
   background-size: 60%;
   background-position: center;
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
-.photo1 h2 {
+.photos h2 {
   position: absolute;
-  color: #EBFCD8;//#CCFFCC;
-  letter-spacing: 5px;
-  font-weight: bold;
-  font-size: 90px;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%,-50%);
@@ -126,7 +190,14 @@ header {
   margin: 0;
 }
 
-.photo1 span {
+.top-photo h2 {
+  color: rgba(255,255,255,0.85);
+  letter-spacing: 5px;
+  font-weight: bold;
+  font-size: 90px;
+}
+
+.top-photo span {
   color: #FFAA99;//#FCB19B;//#FFB299;
 }
 
@@ -370,15 +441,15 @@ footer {
 @media all and (max-width: 1100px) {
 
   .photos {
+    height:700px;
     margin-top: 20px;
   }
 
-  .photo1 {
-    height:700px;
+  .top-photo {
     background-size: 70%;
   }
 
-  .photo1 h2 {
+  .top-photo h2 {
     letter-spacing: 2px;
     font-size: 70px;
   }
@@ -401,14 +472,34 @@ footer {
 //ipad以下レイアウトヘッダーとphoto h2のみ　=====********=========//
 
 @media all and (max-width: 812px) {
-  .header-logo {
-    padding-left: 0px;
+
+  header {
+    display: flex;
     width: 100%;
-    text-align: center;
+    align-items: center;
+  }
+
+  .header-item {
+    align-self: auto;
+    display: flex;
+  }
+
+  .header-logo {
+    padding: 0px;
+    justify-content:center;
+    flex: auto;
   }
 
   .header-menus {
     display: none;
+  }
+
+  .header-right-icon {
+    //display: block;
+  }
+
+  .header-left-icon {
+    //display: block;
   }
 
   .header-menus-sp li {
@@ -428,7 +519,7 @@ footer {
     display: block;
   }
 
-  .photo1 h2 {
+  .top-photo h2 {
     font-size: 60px;
   }
 
@@ -440,14 +531,12 @@ footer {
 @media all and (max-width: 768px) {
 
   .photos {
-    margin-top: 10px;
-  }
-
-  .photo1 {
     height:600px;
+    margin-top: 10px;
+    margin-bottom: 0px;
   }
 
-  .photo1 h2 {
+  .top-photo h2 {
     letter-spacing: 0px;
     font-size: 50px;
   }
@@ -524,7 +613,7 @@ footer {
     width: 600px;
     height: 600px;
     margin-left: 140px;
-    margin-top: 370px;
+    margin-top: 600px;
   }
 
 }
@@ -533,22 +622,31 @@ footer {
 @media all and (max-width: 480px) {
 
   //メイン  ----------------------------------------------//
+   .photos {
+     height: 350px;
+     margin-top: 46px;
+     margin-bottom: 30px;
+   }
 
-  .photos {
-    margin-top: 50px;
+  .top-photo {
+    background-image: url("/images/IMGP3036.JPG");
+    background-size: 175%;
+    background-position: right;
+    border-radius: 50%;
   }
 
-  .photo1 {
-    height: 350px;
-    background-image: url("/images/IMGP3038.JPG");
-    background-size: 95%;
+  .photos h2 {
+    text-align: center;
   }
 
-  .photo1 h2 {
+  .top-photo h2 {
+    width: 100%;
     letter-spacing: 0px;
     font-size: 45px;
-    width: 100%;
-    text-align: center;
+  }
+
+  .top-photo span {
+    color: #D2F8D2;
   }
 
   .circle {
@@ -618,21 +716,21 @@ footer {
     width: 170px;
     height: 170px;
     margin-left: 200px;
-    top: 10px;
+    margin-top: 50px;
   }
 
   .profile-medium {
     width: 200px;
     height: 200px;
     margin-left: 10px;
-    top: 0px;
+    margin-top: 200px;
   }
 
   .profile-large {
     width: 320px;
     height: 320px;
     margin-left: 50px;
-    top: 10px;
+    margin-top: 300px;
   }
 
   //posts/users/form --------------------------------------//

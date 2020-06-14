@@ -11,12 +11,31 @@
   font-size: 40px;
 }
 
-.photo-top h2 {
-  font-size: 30px;
-  margin: 70px 0;
+.photo-top p {
+  //font-size: 30px;
 }
 
+.photo-top h3 {
+  font-size: 30px;
+  margin: 70px 30px 0px 30px;
+  display: inline-block;
+}
 
+.play-photo {
+  height: 350px;
+  background-repeat:  no-repeat;
+  background-image: url("/images/IMGP3038.JPG");
+  background-size: 80%;
+  background-position: center;
+  opacity: 0.9;
+}
+
+.play-photo h2 {
+  color: #FBD2C4;//#FAE2DA;
+  font-size: 50px;
+  letter-spacing: 20px;
+  border-bottom: 4px solid #FBD2C4;//#FAE2DA;
+}
 
 //photo/content==============/////
 
@@ -66,8 +85,11 @@
   display: inline-block;
   cursor: pointer;
   padding: 5px 50px;
-  background-color: #D3F7DC;
-  box-shadow: 0px 5px #A7F0CC;
+  margin-right: 15px;
+  background-color: #F0F8F6;
+  box-shadow: 0 2px 6px #A7F0CC;//#DBF9D1;
+  //background-color: #D3F7DC;
+  //box-shadow: 0px 5px #A7F0CC;
   border-radius: 3px;
   color: #308414;
   font-size: 25px;
@@ -124,6 +146,14 @@
 //タブレット用スマホ用レイアウト ---------------//////////////
 @media all and (max-width: 1100px) {
 
+  .play-photo h2 {
+    letter-spacing: 10px;
+  }
+
+  .photo-top h3 {
+    margin: 70px 10px 0px 10px;
+  }
+
   .photo-janken h1 {
     font-size: 29px;
   }
@@ -168,16 +198,38 @@
 @media all and (max-width: 480px){
 
   .photo-top h1:before {
-    font-size: 20px;
+    font-size: 35px;
   }
 
   .photo-top h1 {
-    font-size: 20px;
+    font-size: 35px;
   }
 
-  .photo-top h2 {
+  .photo-top p {
+    //font-size: 25px;
+  }
+
+  .photo-top h3 {
     font-size: 20px;
-    margin: 70px 0;
+    margin: 30px 0px 0px 0px;
+    padding-bottom: 10px;
+    width: 100%;
+    border-bottom: 1px solid #E5FFCC;
+  }
+
+  .photo-top .container {
+    margin-top: 45px;
+  }
+
+  .play-photo {
+    height: 200px;
+    background-size: cover;
+  }
+
+  .play-photo h2 {
+    font-size: 23px;
+    letter-spacing: 6px;
+    border-bottom: 3px solid #FBD2C4;
   }
 
 }

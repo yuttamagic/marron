@@ -8,19 +8,27 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <%#<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" >%>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
   </head>
 
   <body>
+　　<%= javascript_pack_tag "home.js" %>
     <header>
-      <div class="header-logo">
-          <%= link_to("Marron", "/") %>
+      <div class="header-left-icon header-item"></div>
+      <div class="header-logo header-item">
+          <%= link_to("Marron Jr.", "/") %>
       </div>
 
-      <%#<div class="header-right-menu" id="header-right-menu">
-          <div class="fas fa-bars"></div>
+      <div class="header-right-icon header-item" id="header-right-icon">
+          <%#<div class="fas fa-bars"></div>%>
+          <%#<div class="btnHamburger">%>
+            <span class="line line_01"></span>
+            <span class="line line_02"></span>
+            <span class="line line_03"></span>
+          <%#</div>%>
       </div>
 
       <%#<div class="icon_link_tab">
@@ -33,7 +41,7 @@
         <ul class="header-menus">
           <% if @current_user %>
             <li>
-               Hi!<%= link_to(@current_user.name, "/users/#{@current_user.id}") %>!
+               Hello!<%= link_to(@current_user.name, "/users/#{@current_user.id}") %>!
             </li>
             <li>
               <%= link_to("profile", "/profile") %>
@@ -48,7 +56,7 @@
               <%= link_to("post", "/posts/new") %>
             </li>
             <li>
-              <%= link_to("★withmarron","/photo/top") %>
+              <%= link_to("★with You","/photo/top") %>
             </li>
             <li>
               <%= link_to("logout","/logout",{method: :post})%>　
@@ -60,9 +68,6 @@
             <li>
               <%= link_to("question", "/question/new") %>
             </li>
-            <%#<li>
-              <%= link_to("singup","/signup") %>
-            <%#</li>%>
             <li>
               <%= link_to("login","/login") %>
             </li>
@@ -70,6 +75,44 @@
         </ul>
     </header>
 
+    <div class="modal-menu">
+      <ul class="header-modal-menu">
+      <%#<span class="fas fa-times"></span>%>
+      <% if @current_user %>
+        <li>
+          Hello!<%= link_to(@current_user.name, "/users/#{@current_user.id}") %>!　
+        </li>
+        <li>
+          <%= link_to("profile　", "/profile") %>
+        </li>
+        <li>
+          <%= link_to("★question　", "/question/new") %>
+        </li>
+        <li>
+          <%= link_to("allposts　", "/posts/index") %>
+        </li>
+        <li>
+          <%= link_to("post　", "/posts/new") %>
+        </li>
+        <li>
+          <%= link_to("★with You　","/photo/top") %>
+        </li>
+        <li>
+          <%= link_to("logout","/logout",{method: :post})%>　
+        </li>
+      <% else %>
+        <li>
+          <%= link_to("profile　", "/profile") %>
+        </li>
+        <li>
+          <%= link_to("question　", "/question/new") %>
+        </li>
+        <li>
+          <%= link_to("login　","/login") %>
+        </li>
+      <% end %>
+     </ul>
+    </div>
 
 
 
