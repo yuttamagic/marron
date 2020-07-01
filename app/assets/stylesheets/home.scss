@@ -531,14 +531,27 @@ footer {
 @media all and (max-width: 768px) {
 
   .photos {
-    height:600px;
-    margin-top: 10px;
+    height:550px;
+    margin-top: -30px;
     margin-bottom: 0px;
+  }
+
+  .top-photo {
+    background-image: url("/images/140907_7D_7426のコピー.jpg");//("/images/IMGP3036.JPG");
+    background-size: contain;
+    background-position: center;
+    //border-radius: 50%;
   }
 
   .top-photo h2 {
     letter-spacing: 0px;
     font-size: 50px;
+    top: 60%;
+  }
+
+  .top-photo span {
+    color:white;
+    opacity: 0.85;
   }
 
   .circle {
@@ -623,30 +636,32 @@ footer {
 
   //メイン  ----------------------------------------------//
    .photos {
-     height: 350px;
-     margin-top: 46px;
-     margin-bottom: 30px;
+     height: 250px;
+     margin-top: -23px;
+     margin-bottom: 20px;
    }
 
   .top-photo {
-    background-image: url("/images/IMGP3036.JPG");
-    background-size: 175%;
-    background-position: right;
-    border-radius: 50%;
+    background-image: url("/images/140907_7D_7426のコピー.jpg");//("/images/IMGP3036.JPG");
+    background-size: contain;
+    background-position: center;
+    //border-radius: 50%;
   }
 
   .photos h2 {
     text-align: center;
+    top: 65%;
   }
 
   .top-photo h2 {
     width: 100%;
     letter-spacing: 0px;
-    font-size: 45px;
+    font-size: 40px;
   }
 
   .top-photo span {
-    color: #D2F8D2;
+    color: white;
+    opacity: 0.85;
   }
 
   .circle {
